@@ -24,6 +24,11 @@ public class SpringJavaFxApplication implements CommandLineRunner {
 		p.setName("Béla");
 		p.setDateOfBirth(LocalDate.of(2000,1,1));
 
+		Person p2 = Person.builder()
+				.name("Bella")
+				.dateOfBirth(LocalDate.of(2001,2,2))
+				.build();
+
 		personRepository.save(p);
 	}
 }
