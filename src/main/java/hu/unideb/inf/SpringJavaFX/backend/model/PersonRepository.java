@@ -1,4 +1,4 @@
-package hu.unideb.inf.SpringJavaFX.model;
+package hu.unideb.inf.SpringJavaFX.backend.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

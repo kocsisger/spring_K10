@@ -1,7 +1,7 @@
-package hu.unideb.inf.SpringJavaFX;
+package hu.unideb.inf.SpringJavaFX.backend;
 
-import hu.unideb.inf.SpringJavaFX.model.Person;
-import hu.unideb.inf.SpringJavaFX.model.PersonRepository;
+import hu.unideb.inf.SpringJavaFX.backend.model.Person;
+import hu.unideb.inf.SpringJavaFX.backend.model.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -30,5 +30,11 @@ public class SpringJavaFxApplication implements CommandLineRunner {
 				.build();
 
 		personRepository.save(p);
+	}
+
+	public void print(){
+		for(Person p : personRepository.findAll()){
+			System.out.println(p);
+		}
 	}
 }

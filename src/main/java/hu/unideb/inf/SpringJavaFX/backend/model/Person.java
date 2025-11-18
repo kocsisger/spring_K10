@@ -1,4 +1,4 @@
-package hu.unideb.inf.SpringJavaFX.model;
+package hu.unideb.inf.SpringJavaFX.backend.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
